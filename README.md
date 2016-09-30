@@ -8,14 +8,16 @@ Each library is organized into their own folder which includes all source files 
 If no license is specified it will fall under CC0 (Public Domain) https://creativecommons.org/publicdomain/zero/1.0/
 
 ## Code quality requirements (RobotC)
-* (should go without saying) Use comments unless the code's functionality is obvious
-* Describe all your API functions in the project's `info.txt`
-* Clean variable namespace, prefix all the functions and variables in your lib with it's name to avoid conflicts
-* Indentation, 4 spaces is preferred
-* camelCase for functions, CamelCase for classes
-* Dont mix and match syntax styles inside of projects! ie choose between `void* foo` and `void *foo` then stick with it
-* Future proof. avoid having to deprecate functions in the future.
-* Users rarely read documentation, put some examples in an `examples` sub folder if possible
+* Use comments unless the code's functionality is obvious.
+* Describe all your API functions in the project's `info.txt`.
+* Clean variable namespace, prefix all the functions and variables in your lib with it's name to avoid conflicts.
+* Use standard robotc formatting (tabs, not spaces).
+* camelCase for functions, CamelCase for classes.
+* Use allman-style for brackets https://en.wikipedia.org/wiki/Indent_style#Allman_style
+* Restrict each line of code to no more then 100 characters long.
+* Declare objects at smallest possible scope.  Avoid using global variables. 
+* Future proof. Avoid having to deprecate functions in the future.
+* Put some examples in an `examples` sub folder if possible.
 * TEST YOUR CODE BEFORE PUSHING!
 
 ## Issue tracker
