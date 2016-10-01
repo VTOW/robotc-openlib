@@ -1,0 +1,11 @@
+# Filters:
+
+## Biquad Filter: 
+ - Best used for filtering gyroscope/accelerometer data.
+ - int BiquadFilterInit(...) initializes the filter
+   - `type` can be either LOWPASS or HIGHPASS 
+   - `sampleFreq` is the sampling frequency. Ex. 100 if sampling 100 times a second.
+   - `cutoffFreq` is the -3db frequency for the filter.  
+   - `defaultValue` is the first value to be saved into the filter.  Default to 0.
+   - NOTE: samplingFreq should not be less then the cutoffFreq.
+ - float BiquadFilterSample(...) takes a sample and returns a filtered value.
